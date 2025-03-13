@@ -1,5 +1,5 @@
 import Grid from '../Grid/Grid';
-import PhotosGalleryItem from '../PhotosGalleryItem';
+import PhotosGalleryItem from '../PhotosGalleryItem/PhotosGalleryItem';
 
 const PhotosGallery = ({ images, openModal }) => {
   return (
