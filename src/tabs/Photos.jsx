@@ -15,7 +15,7 @@ const Photos = () => {
   const [error, setError] = useState(null);
   const [isEmpty, setIsEmpty] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
   const [modalSrc, setModalSrc] = useState('');
   const [modalAlt, setModalAlt] = useState('');
 
@@ -58,13 +58,13 @@ const Photos = () => {
   };
 
   const openModal = ({ src, alt }) => {
-    setModalIsOpen(true);
+    setIsOpen(true);
     setModalSrc(src);
     setModalAlt(alt);
   };
 
   const closeModal = () => {
-    setModalIsOpen(false);
+    setIsOpen(false);
     setModalSrc('');
     setModalAlt('');
   };
@@ -90,8 +90,8 @@ const Photos = () => {
       <ImageModal
         modalIsOpen={modalIsOpen}
         closeModal={closeModal}
-        alt={modalAlt}
         src={modalSrc}
+        alt={modalAlt}
       />
     </>
   );
