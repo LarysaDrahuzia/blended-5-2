@@ -57,7 +57,7 @@ const Photos = () => {
     setPage(prevPage => prevPage + 1);
   };
 
-  const openModal = ({ src, alt }) => {
+  const openModal = (src, alt) => {
     setIsOpen(true);
     setModalSrc(src);
     setModalAlt(alt);
